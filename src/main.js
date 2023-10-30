@@ -53,10 +53,17 @@ function deleteCard(evt) {
     .catch((err) => console.log(err));
 }
 
+
+
 function onEditing(e) {
   const parentEl = e.target.closest(".js-wrap-card");
   const cardId = parentEl.dataset.cardid;
   const text = e.target.textContent;
   changeName(cardId, text);
   console.log(text);
+
+
+
+
+
 }
