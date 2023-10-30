@@ -14,6 +14,7 @@ function onFormInput(e) {
   e.preventDefault();
   const formData = new FormData(e.target);
   const data = Object.fromEntries(formData);
+  console.log(data)
   e.target.reset();
   data.createdAt = Date.now();
   serviceWriteData(data)
